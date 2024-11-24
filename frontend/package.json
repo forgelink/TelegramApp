@@ -1,0 +1,46 @@
+{
+  "name": "frontend",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "dev": "vite --port=3001",
+    "build": "vite build",
+    "serve": "vite preview",
+    "start": "vite",
+    "preview": "pnpm run build && wrangler pages dev ./dist",
+    "deploy": "pnpm run build && wrangler pages deploy ./dist",
+    "shadcn": "pnpm dlx shadcn@latest add"
+  },
+  "devDependencies": {
+    "@tanstack/router-plugin": "^1.81.9",
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/telegram-web-app": "^7.10.1",
+    "@vitejs/plugin-react": "^4.3.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "vite": "^5.4.8",
+    "wrangler": "^3.87.0"
+  },
+  "dependencies": {
+    "@radix-ui/react-menubar": "^1.1.2",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@tanstack/react-query": "^5.60.5",
+    "@tanstack/react-router": "^1.82.1",
+    "@tanstack/router-devtools": "^1.82.1",
+    "@trpc/client": "11.0.0-rc.638",
+    "@trpc/react-query": "11.0.0-rc.638",
+    "@vkruglikov/react-telegram-web-app": "^2.1.9",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.460.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}
